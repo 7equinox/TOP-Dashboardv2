@@ -143,7 +143,8 @@ img[src$=".jpg"] {
   color: black;
 }
 
-.profile-icon {
+.profile-icon,
+.trending-profile {
   width: 2.5rem;
 }
 
@@ -202,7 +203,8 @@ button {
 }
 
 .profile-link:hover,
-.project-links a:hover {
+.project-links a:hover,
+.recent-trending:hover {
   background-color: #FFFAA0;
   border-radius: 50px;
 }
@@ -215,7 +217,8 @@ button {
 .search-container .search-input:active,
 .notification-link:active,
 .profile-link:active,
-.project-links a:active {
+.project-links a:active,
+.recent-trending:active {
   background-color: #b19cd9;
 }
 
@@ -257,6 +260,8 @@ main {
 .trending-header {
   font-weight: 600;
   font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
 }
 
 .project-item {
@@ -292,7 +297,10 @@ main {
 }
 
 .project-text:hover,
-.recent-announcement:hover {
+.recent-announcement:hover,
+.project-header:hover,
+.announcement-header:hover,
+.trending-header:hover {
   text-decoration: underline;
 }
 
@@ -301,6 +309,12 @@ main {
 .recent-announcement:active,
 .recent-announcement:active div {
   color: #1a237e !important;
+}
+
+.project-header:active,
+.announcement-header:active,
+.trending-header:active {
+  color: #26309b;
 }
 
 .project-links {
@@ -349,4 +363,20 @@ main {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+}
+
+.recent-trending {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0.75rem 5px;
+  text-decoration: none;
+}
+
+.trending-handle {
+  color: black;
+}
+
+.trending-username {
+  color: hsl(0deg 0% 38.82%);
 }
